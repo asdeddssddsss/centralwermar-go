@@ -35,6 +35,18 @@
   .stat b{font-size:26px;font-weight:600;color:var(--ink)}
   .stat span{display:block;font-size:12px;color:var(--muted);margin-top:4px}
 
+  /* Equipe */
+  .team{background:#fff;border-bottom:1px solid var(--line)}
+  .team .lead2{font-size:17px;color:#3c4d43;line-height:1.7;max-width:720px;margin-top:20px}
+  .team .lead2 + .lead2{margin-top:18px}
+  .teamgrid{margin-top:40px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .tcard{border:1px solid var(--line);border-radius:16px;padding:26px;background:#f8fbf8}
+  .tcard .ic{height:42px;width:42px;border-radius:11px;background:#e3f1e8;display:flex;align-items:center;justify-content:center;color:var(--gold);font-size:19px;margin-bottom:16px}
+  .tcard h3{font-size:18px;font-weight:600}
+  .tcard p{margin-top:10px;font-size:14px;color:var(--muted2);line-height:1.6}
+  .values{margin-top:36px;display:flex;flex-wrap:wrap;gap:12px}
+  .vchip{font-size:13px;color:#2e4036;background:#eef6f0;border:1px solid var(--line);border-radius:999px;padding:9px 16px}
+
   .note{background:var(--ink);color:#e7f2eb;border-radius:18px;padding:36px}
   .note .tag{color:var(--gold-soft);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.2em;margin-bottom:16px}
   .note p.big{font-size:20px;line-height:1.6}
@@ -66,6 +78,7 @@
   footer .bot{border-top:1px solid #20392c;margin:40px 20px 0;padding:24px 0 48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px}
 
   .pt{padding-top:64px}.pb{padding-bottom:56px}
+  @media(max-width:860px){.teamgrid{grid-template-columns:1fr}}
   @media(max-width:720px){.grid2,.stats{grid-template-columns:1fr 1fr}.cols2{grid-template-columns:1fr!important}}
 </style>
 </head>
@@ -85,6 +98,30 @@
     </div>
     <span class="badge">✔ CNPJ 29.843.174/0001-06</span>
   </div></header>
+
+  <!-- ===== EQUIPE (TOPO) ===== -->
+  <section class="team"><div class="wrap pt pb">
+    <p class="eyebrow">Perfil institucional · Pessoas</p>
+    <h1 class="serif">Uma equipe de profissionais construída ao longo de décadas</h1>
+    <p class="lead2">Grande parte da história registrada sob este CNPJ está ligada às pessoas que compõem o seu quadro de profissionais. Ao longo de muitos anos de atividade, formou-se um time com sólida vivência prática na área de materiais de construção, capaz de orientar o público com clareza, atenção e responsabilidade técnica.</p>
+    <p class="lead2">São profissionais que conhecem de perto cada etapa de uma obra — do planejamento inicial às fases de acabamento — e que fazem do atendimento cuidadoso um valor cultivado no dia a dia. A experiência acumulada por diferentes gerações de colaboradores reflete-se na organização, no cuidado com a informação e no respeito a quem procura orientação antes de tomar decisões.</p>
+    <p class="lead2">Mais do que conhecimento técnico, o que caracteriza essa equipe é o compromisso com a transparência e com a boa relação humana. Atendentes, profissionais de apoio e especialistas de cada área trabalham de forma integrada, valorizando a escuta, a paciência e a disposição genuína de ajudar. É esse espírito coletivo, cultivado ao longo de décadas de atividade, que dá identidade ao trabalho realizado.</p>
+
+    <div class="teamgrid">
+      <div class="tcard"><div class="ic">✶</div><h3 class="serif">Experiência de Campo</h3><p>Colaboradores com longa convivência prática na rotina de obras e reformas, familiarizados com as dúvidas reais de quem constrói e reforma.</p></div>
+      <div class="tcard"><div class="ic">◈</div><h3 class="serif">Atenção ao Público</h3><p>Uma cultura de atendimento baseada na escuta, na cordialidade e no respeito ao tempo e às necessidades de cada pessoa.</p></div>
+      <div class="tcard"><div class="ic">❖</div><h3 class="serif">Trabalho em Equipe</h3><p>Diferentes áreas atuando de forma integrada, somando saberes técnicos e humanos para orientar com clareza e honestidade.</p></div>
+    </div>
+
+    <div class="values">
+      <span class="vchip">Dedicação</span>
+      <span class="vchip">Responsabilidade técnica</span>
+      <span class="vchip">Transparência</span>
+      <span class="vchip">Cordialidade</span>
+      <span class="vchip">Respeito ao cliente</span>
+      <span class="vchip">Trabalho em equipe</span>
+    </div>
+  </div></section>
 
   <!-- Hero -->
   <section class="wrap pt pb">
